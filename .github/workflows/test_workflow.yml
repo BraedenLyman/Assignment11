@@ -1,0 +1,11 @@
+name: Test Workflow
+
+on: [push]
+jobs:
+  output_test_workflow:
+    name: Output Test Workflow
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run a script
+      run: echo "Hello, world!"
