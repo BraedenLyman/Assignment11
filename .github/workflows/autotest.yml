@@ -11,4 +11,6 @@ jobs:
       with:
         python-version: "3.x"
     - name: Produce lowest number outout
-      run: find_lowest_number.py > test1_output.txt
+      run: find_lowest_number.py > test_data/test1_output.txt
+    - name: Test 1
+      run: diff test_data/test1_input.txt test_data/test1_output.txt
