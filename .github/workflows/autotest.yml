@@ -12,3 +12,6 @@ jobs:
         python-version: "3.x"
     - name: Produce lowest number outout
       run: python3 find_lowest_number.py test_data/test1_input.txt test_data/test1_output.txt
+      
+    - name: Display Output File
+      run: cat test_data/test1_output.txt
