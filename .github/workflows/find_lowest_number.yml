@@ -24,3 +24,9 @@ jobs:
 
     - name: Test2 - Differecnes Between Output and Expected
       run: diff test_data/test2_output.txt test_data/test2_expected.txt
+
+    - name: Test3 - Produce No Number in File Text
+      run: python3 find_lowest_number.py test_data/test3_input.txt test_data/test3_output.txt
+
+    - name: Test3 - Differecnes Between Output and Expected
+      run: diff test_data/test3_output.txt test_data/test3_expected.txt
